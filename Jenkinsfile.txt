@@ -1,16 +1,9 @@
 pipeline {
  agent any
---ou--
- agent {
- node {
- label 'build'
- }
- }
  tools {
  maven 'M2_HOME'
  }
  options {
- --Timeout counter starts after agent is allocated--
  timeout(time: 1, unit: 'SECONDS')
  }
  environment {
