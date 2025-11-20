@@ -1,8 +1,5 @@
 pipeline {
  agent any
- tools {
- maven 'M2_HOME'
- }
  environment {
  APP_ENV = "DEV"
  }
