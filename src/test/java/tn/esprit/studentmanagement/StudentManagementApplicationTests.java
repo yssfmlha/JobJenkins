@@ -3,8 +3,9 @@ package tn.esprit.studentmanagement;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.TestComponent;
 
-@SpringBootTest
+@TestComponent
 class StudentManagementApplicationTests {
 
     @Test
