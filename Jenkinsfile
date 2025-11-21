@@ -34,7 +34,7 @@ pipeline{
 			steps{
 				script{
 					sh 'echo $DOCKER_CREDENTIALS_PSW | docker login -u $DOCKER_CREDENTIALS_USR --password-stdin'
-					sh "docker push yssfmlha/student-management:1.0"
+					sh "sudo docker push yssfmlha/student-management:1.0"
 				}
 			}
 		}
