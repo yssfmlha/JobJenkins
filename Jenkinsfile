@@ -42,6 +42,7 @@ pipeline{
 			steps{
 				script{
 					sh "kubectl apply -f k8s/spring-deployment.yaml -n devops"
+					sh "kubectl apply -f k8s/mysql-deployment.yaml -n devops"
 					sh "kubectl rollout status deployment/spring-app -n devops"
 				}
 			}
