@@ -50,8 +50,10 @@ pipeline{
 				script{
 					sh "kubectl apply -f k8s/spring-deployment.yaml -n devops"
 					sh "kubectl apply -f k8s/mysql-deployment.yaml -n devops"
+					sh "kubectl apply -f k8s/sonarqube-deployment.yaml -n devops"
 					sh "kubectl rollout status deployment/spring-app -n devops"
 					sh "kubectl rollout status deployment/mysql -n devops"
+					sh "kubectl rollout status deployment/sonarqube -n devops"
 				}
 			}
 		}
