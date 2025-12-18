@@ -16,7 +16,7 @@ data:
           - targets: ['localhost:9090']
 
       - job_name: 'spring-boot'
-        metric_path: /students/actuator/prometheus
+        metrics_path: /students/actuator/prometheus
         static_configs:
           - targets: ['spring-service:8080']
 
