@@ -33,6 +33,7 @@ spec:
       containers:
         - name: spring-app
           image: yssfmlha/student-management:1.0
+          imagePullPolicy: Always
           ports:
             - containerPort: 8089
           envFrom:
